@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">	
     <title>FabFitFun Welcome</title>
     <link href="assets/images/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
-	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
 </head>
 <body>
 	<link rel="stylesheet" href="assets/css/widget.css" />
@@ -19,15 +20,18 @@
         </div>
     </div>
     <div class="container">
-        <div class="inner-contant">
-            <h1>Please enter your information below to receive your exclusive discount!</h1>
-            <form name="welcome" id="welcome" method="POST">
-                <input type="email" name="email" id="email" />
-                <div class="g-recaptcha" id="gid" ></div>
-                <img src="assets/images/offer-1.jpg" alt="Coupon" title="Coupon" itemprop="Coupon" class="coupon_img" />
-                <span title="Coupon Download" class="download_btn">Download</span>
-                <span class="error">The URL you entered is invalid. You will not be able to download the coupon.</span>
-            </form>
+        <div class="inner-contant">            
+            <div class="inner-contantainer">
+                <h1>Please enter your information below to receive your exclusive discount!</h1>
+                <form name="welcome-form" id="welcome_form" method="POST" novalidate="novalidate">
+                    <input type="text" name="welcome-email" id="welcome_email" required="required" />
+                    <span class="error email_error">The Email Id you entered is invalid. You will not be able to download the coupon.</span>
+                    <div class="g-recaptcha" id="welcome_recaptcha" data-callback="correctCaptcha"></div>
+                    <span class="error recaptcha_error">Invalid ReCaptcha. Please re-submit form with correct recaptcha.</span>
+                    <img src="assets/images/offer-1.jpg" alt="Coupon" title="Coupon" itemprop="Coupon" class="coupon_img" />
+                    <input type=submit title="Coupon Download" class="download_btn" value="Download" data-selection-offercode="131315" />
+                </form>
+            </div>
         </div>
     </div>
 	<script src="assets/js/script.js"></script>
