@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+    <title>FabFitFun Welcome</title>
+    <link href="assets/images/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+	<link rel="stylesheet" href="assets/css/widget.css" />
+    <!-- Campaign Widget -->
+	<div class="logo-parent">
+        <div class="logo-container">
+			<a href="https://www.dove.com/us/en/home.html" target="_blank" title="dove-logo header" class="headerLogo">
+            <img src="assets/images/Dove.png" alt="Dove" title="Dove" itemprop="logo">
+			</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="inner-contant">
+            <h1>Please enter your information below to receive your exclusive discount!</h1>
+            <form name="welcome" id="welcome" method="POST">
+                <input type="email" name="email" id="email" />
+                <div class="g-recaptcha" id="gid" ></div>
+                <img src="assets/images/offer-1.jpg" alt="Coupon" title="Coupon" itemprop="Coupon" class="coupon_img" />
+                <span title="Coupon Download" class="download_btn">Download</span>
+                <span class="error">The URL you entered is invalid. You will not be able to download the coupon.</span>
+            </form>
+        </div>
+    </div>
+	<script src="assets/js/script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+</body>
+</html>
