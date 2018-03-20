@@ -32,6 +32,7 @@ $(document).ready(function(){
 	$('.inner-contant').on('click','.download_btn', function(){
 		var email = $('#welcome_email').val();
 		if(email!="" && validateEmail(email) ){	
+			$('.email_req_error').css('display','none');
 			$('.email_error').css('display','none');		
 			var response = grecaptcha.getResponse();
 			if (response.length == 0) {
@@ -46,8 +47,15 @@ $(document).ready(function(){
 				return false;
 			}
 		}else{
-			$('#welcome_email').focus();
-			$('.email_error').css('display','block');
+			if(!email){
+				$('#welcome_email').focus();
+				$('.email_req_error').css('display','block');
+				$('.email_error').css('display','none');
+			}else{
+				$('#welcome_email').focus();
+				$('.email_error').css('display','block');
+				$('.email_req_error').css('display','none');
+			}
 			return false;
 		}
 	});

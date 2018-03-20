@@ -129,11 +129,12 @@ form textarea {
 }
 .inner-contant{
     position:relative;
-    min-height: 440px;
     text-align: center;
 }
 .inner-contantainer{
+    position:relative;
     padding: 0 32px;
+    min-height: 398px;
 }
 .inner-contant:after {
     content: '';
@@ -197,7 +198,7 @@ form textarea {
     font-weight: 200;
     color: #002663;
     line-height: normal;
-    max-width: 520px;
+    max-width: 320px;
     margin: 0 auto;
     padding-top: 50px;
 }
@@ -217,18 +218,48 @@ form textarea {
     width: 100%;
     margin: 20px 0 0;
     padding: 10px;
+    color:#002663;
+    border: 1px solid #002663;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+
+input::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 1;
+    filter: alpha(opacity = 100);
+}
+
+input::-moz-placeholder {
+    color: inherit;
+    opacity: 1;
+    filter: alpha(opacity = 100);
+}
+
+input:-ms-input-placeholder {
+    color: inherit;
+    opacity: 1;
+    filter: alpha(opacity = 100);
+}
+
+input:-moz-placeholder {
+    color: inherit;
+    opacity: 1;
+    filter: alpha(opacity = 100);
 }
 /* Responsive */
-@media (min-width: 768px){    
-    .error{
-        font-size: 16px;
-    }
+@media (min-width: 768px){
     .inner-contantainer{
         padding: 0 12px;
+        min-height: 398px;
     }
-    .inner-contant h1{
-        font-size: 30px;
-    }     
+    .thankyou .inner-contant h1{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50% , -50%)
+    }
     .inner-contant:after {
         background: url(../images/footer.png) center bottom/100% 100% no-repeat;
         margin: 0;

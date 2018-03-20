@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
 </head>
-<body>
+<body class="welcome">
 	<link rel="stylesheet" href="assets/css/widget.css" />
     <!-- Campaign Widget -->
 	<div class="logo-parent">
@@ -25,11 +25,12 @@
                 <h1>Please enter your information below to receive your exclusive discount!</h1>
                 <form name="welcome-form" id="welcome_form" method="POST" novalidate="novalidate">
                     <input type="text" name="welcome-email" id="welcome_email" required="required" />
+                    <span class="error email_req_error">Please enter your E-mail Address.</span>
                     <span class="error email_error">The Email Id you entered is invalid. You will not be able to download the coupon.</span>
                     <div class="g-recaptcha" id="welcome_recaptcha" data-callback="correctCaptcha"></div>
                     <span class="error recaptcha_error">Invalid ReCaptcha. Please re-submit form with correct recaptcha.</span>
                     <img src="assets/images/offer-1.jpg" alt="Coupon" title="Coupon" itemprop="Coupon" class="coupon_img" />
-                    <input type=submit title="Coupon Download" class="download_btn" value="Download" data-selection-offercode="131315" />
+                    <input type=submit title="Coupon Download" class="download_btn" value="Download" data-selection-offercode="133713" />
                 </form>
             </div>
         </div>
