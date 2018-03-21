@@ -5,7 +5,7 @@ var validateEmail = function(email){
 }
 var onloadCallback = function(){
 	grecaptcha.render("welcome_recaptcha",{
-		'sitekey':'6LfVHAETAAAAAK5e91YdgFCgsVEjtVkQfPrbNxKS'
+		'sitekey':'6LfJGykTAAAAAFJDiX26rXA053VikR3zoIgUxfPo'
 	});
 }
 var printCoupon = function(){

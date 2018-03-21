@@ -64,7 +64,7 @@ sup {
     color: #ff000a;
     margin: 10px 0 0;
     display: none;
-    font-size: 12px;
+    font-size: 14px;
 }
 form input,
 form select,
@@ -146,7 +146,8 @@ form textarea {
 }
 .coupon_img{
     display: block;
-    margin: 30px auto;
+    margin: 10px auto 20px;
+    max-width:100%;
 }
 .download_btn{
     cursor: pointer;
@@ -203,6 +204,13 @@ form textarea {
     padding-top: 50px;
 }
 
+.thankyou .inner-contant h1{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50% , -50%)
+}
+
 #welcome_form{
     max-width: 302px;
     margin: 0 auto;
@@ -249,20 +257,25 @@ input:-moz-placeholder {
     filter: alpha(opacity = 100);
 }
 /* Responsive */
+@media (min-width: 480px){
+    .inner-contant:after {
+        height: 270px;
+    }
+}
 @media (min-width: 768px){
     .inner-contantainer{
         padding: 0 12px;
         min-height: 398px;
     }
-    .thankyou .inner-contant h1{
-        position: absolute;
-        top:50%;
-        left:50%;
-        transform: translate(-50% , -50%)
-    }
     .inner-contant:after {
         background: url(../images/footer.png) center bottom/100% 100% no-repeat;
         margin: 0;
+        height: 145px;
+    }
+}
+
+@media (min-width: 992px){
+    .inner-contant:after{
         height: 215px;
     }
 }
