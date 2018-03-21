@@ -8,6 +8,30 @@ var onloadCallback = function(){
 		'sitekey':'6LfJGykTAAAAAFJDiX26rXA053VikR3zoIgUxfPo'
 	});
 }
+
+// Pop-up Overlay 
+$("body").on("click", ".popup", function(e) {
+	e.preventDefault();
+	var popupMainClass = $(this).parents().find(".popup_container")[0].outerHTML;
+	$('body').append('<div class="popup_overlay"><div class="popup_section">'+popupMainClass+'</div></div>');
+	$('.popup_overlay .popup_container').css("display","block");
+	$('.popup_overlay .popup_container').scrollLeft(280);
+	$('.popup_overlay .popup_container').append('<span class="popup_close"></span>');
+	$('body').css('overflow','hidden');
+});
+
+$(document).on('click','.popup_overlay', function(e){
+	if(e.target === this){
+		$(this).remove();
+		$('body').css('overflow','auto');
+	}
+});
+$(document).on('click','.popup_overlay .popup_close', function(){
+	$(this).parents('.popup_overlay').remove();
+	$('body').css('overflow','auto');
+});
+
+// End Pop-up Overlay
 var printCoupon = function(){
 	var webPin = window.btoa($('#welcome_email').val());
 	if(webPin.length > 50) webPin = webPin.substring(0,50);

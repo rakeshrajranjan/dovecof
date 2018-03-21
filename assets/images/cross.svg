@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="56px" height="56px"
+	 viewBox="0 0 56 56" enable-background="new 0 0 56 56" xml:space="preserve">
+<title>icon : plus</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1" sketch:type="MSPage">
+	<g id="iPad-landscape---component-set-1" stroke-width="1" transform="translate(-596.000000, -5562.000000)" sketch:type="MSArtboardGroup"  >
+		<g id="CP-09-product-listing" transform="translate(-14.000000, 5160.000000)" sketch:type="MSLayerGroup">
+			<g id="Product-List-_x2B_-CTA" transform="translate(0.000000, 323.000000)" sketch:type="MSShapeGroup">
+				<g id="Product-1---Quick-view" transform="translate(33.000000, 64.000000)">
+					<path id="icon-:-plus" fill="" d="M624.692,24.791c0.411-0.409,0.411-1.075-0.001-1.484
+						c-0.409-0.409-1.072-0.41-1.483,0l-18.207,18.21l-18.209-18.21c-0.409-0.409-1.075-0.409-1.483,0
+						c-0.412,0.409-0.412,1.075,0,1.483l18.209,18.208L585.309,61.21c-0.412,0.409-0.412,1.074,0,1.483
+						c0.204,0.206,0.472,0.309,0.74,0.309c0.269,0,0.538-0.103,0.744-0.309l18.208-18.211l18.207,18.211
+						c0.206,0.206,0.475,0.309,0.743,0.309c0.269,0.001,0.537-0.103,0.741-0.309c0.411-0.409,0.411-1.074,0-1.483l-18.208-18.211
+						L624.692,24.791z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
